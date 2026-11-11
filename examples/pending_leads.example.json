@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "tapiterie-auto-exemplu",
+    "niche_key": "tapiterie",
+    "name": "Tapițerie Auto Exemplu SRL",
+    "phone_wa": "40700000101",
+    "phone_display": "0700 000 101",
+    "address": "Strada Exemplului 1, București",
+    "addr_line1": "Strada Exemplului 1",
+    "addr_city": "București",
+    "rating": 4.5,
+    "reviews_count": 52,
+    "program_text": "Luni–Vineri: 09:00 - 18:00 | Sâmbătă: 09:00 - 16:00 | Duminică: 09:00 - 12:30",
+    "hours_s": {
+      "thu": [
+        9,
+        18
+      ],
+      "fri": [
+        9,
+        18
+      ],
+      "sat": [
+        9,
+        16
+      ],
+      "sun": [
+        9,
+        12.5
+      ],
+      "mon": [
+        9,
+        18
+      ],
+      "tue": [
+        9,
+        18
+      ],
+      "wed": [
+        9,
+        18
+      ]
+    },
+    "fb_only": false
+  },
+  {
+    "slug": "atelier-demo-tapiterie",
+    "niche_key": "tapiterie",
+    "name": "Atelier Demo Tapițerie",
+    "phone_wa": "40700000102",
+    "phone_display": "0700 000 102",
+    "address": "Bulevardul Demo 2, București",
+    "addr_line1": "Bulevardul Demo 2",
+    "addr_city": "București",
+    "rating": 4.5,
+    "reviews_count": 13,
+    "program_text": "Luni–Vineri: 08:00 - 17:00 | Sâmbătă–Duminică: Închis",
+    "hours_s": {
+      "thu": [
+        8,
+        17
+      ],
+      "fri": [
+        8,
+        17
+      ],
+      "sat": null,
+      "sun": null,
+      "mon": [
+        8,
+        17
+      ],
+      "tue": [
+        8,
+        17
+      ],
+      "wed": [
+        8,
+        17
+      ]
+    },
+    "fb_only": false
+  }
+]

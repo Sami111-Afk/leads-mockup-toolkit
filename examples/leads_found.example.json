@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Tapițerie Auto Exemplu SRL",
+    "phone": "0700 000 101",
+    "url": "https://www.google.com/maps/place/EXEMPLU",
+    "feedHasWebsite": false,
+    "rating": 4.5,
+    "reviews": 52,
+    "niche": "tapiterie auto Bucuresti",
+    "niche_key": "tapiterie",
+    "palette": "leather",
+    "address": "Strada Exemplului 1, București",
+    "web": null,
+    "fb_only": false,
+    "category": "RV detailing service",
+    "program": "Luni–Vineri: 09:00 - 18:00 | Sâmbătă: 09:00 - 16:00 | Duminică: 09:00 - 12:30",
+    "hours_s": {
+      "thu": [
+        9,
+        18
+      ],
+      "fri": [
+        9,
+        18
+      ],
+      "sat": [
+        9,
+        16
+      ],
+      "sun": [
+        9,
+        12.5
+      ],
+      "mon": [
+        9,
+        18
+      ],
+      "tue": [
+        9,
+        18
+      ],
+      "wed": [
+        9,
+        18
+      ]
+    }
+  },
+  {
+    "name": "Atelier Demo Tapițerie",
+    "phone": "0700 000 102",
+    "url": "https://www.google.com/maps/place/EXEMPLU",
+    "feedHasWebsite": false,
+    "rating": 4.5,
+    "reviews": 13,
+    "niche": "tapiterie auto Bucuresti",
+    "niche_key": "tapiterie",
+    "palette": "leather",
+    "address": "Bulevardul Demo 2, București",
+    "web": null,
+    "fb_only": false,
+    "category": "Upholstery shop",
+    "program": "Luni–Vineri: 08:00 - 17:00 | Sâmbătă–Duminică: Închis",
+    "hours_s": {
+      "thu": [
+        8,
+        17
+      ],
+      "fri": [
+        8,
+        17
+      ],
+      "sat": null,
+      "sun": null,
+      "mon": [
+        8,
+        17
+      ],
+      "tue": [
+        8,
+        17
+      ],
+      "wed": [
+        8,
+        17
+      ]
+    }
+  }
+]

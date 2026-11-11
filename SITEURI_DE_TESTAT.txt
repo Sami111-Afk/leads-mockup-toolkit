@@ -1,0 +1,9 @@
+================================================================================
+📋 SITEURI DE TESTAT — firme REALE fără site + mockup live
+================================================================================
+Notă: firme reale verificate pe Google Maps (fără câmp Website = nu dețin site
+propriu), cu telefon real din listare. Fiecare are un mockup live funcțional
+(butoane Sună / WhatsApp / Hartă cu datele lor reale) pe GitHub Pages.
+De sunat / trimis pitch. Se completează automat de `pipeline_leads.py publish`.
+================================================================================
+

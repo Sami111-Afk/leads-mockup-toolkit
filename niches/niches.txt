@@ -1,0 +1,9 @@
+# O nișă pe linie (fără linii goale/#). Se adaugă automat orașul dacă lipsește.
+tapiterie auto Bucuresti
+vulcanizare Bucuresti
+electrica auto diagnoza Bucuresti
+ceasornicarie Bucuresti
+cizmarie reparatii incaltaminte Bucuresti
+spalatorie auto Bucuresti
+vopsitorie tinichigerie auto Bucuresti
+reparatii masini de spalat Bucuresti

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>leads-toolkit — galerie template-uri</title>
+<style>
+:root{--ink:#15201d;--mut:#5d6a64;--line:#e3e1d8;--bg:#f7f6f1;--card:#fff;--accent:#1a6c7a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:400 15px/1.6 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:32px clamp(16px,4vw,48px) 64px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px;max-width:1400px;margin:0 auto 10px}
+h1{font-size:1.5rem;letter-spacing:-.02em}
+h1 small{color:var(--mut);font-weight:400;font-size:.95rem;margin-left:.6em}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;background:var(--card);overflow:hidden}
+.toggle button{font:600 .82rem/1 system-ui;padding:.65em 1.2em;border:0;background:none;color:var(--mut);cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:#fff}
+p.hint{max-width:1400px;margin:0 auto 28px;color:var(--mut);font-size:.85rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:24px;max-width:1400px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.card-h b{font-size:.98rem}
+.card-h .arch{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:#1a6c7a14;border-radius:999px;padding:.45em 1em;white-space:nowrap}
+.frame{position:relative;background:#eceae2;overflow:hidden;height:460px}
+.frame iframe{position:absolute;top:0;left:50%;transform-origin:top center;border:0;background:#fff;pointer-events:none}
+/* desktop: 1280px lățime scalată să încapă */
+.frame.desktop iframe{width:1280px;height:1650px;transform:translateX(-50%) scale(.34)}
+/* mobil: 390px, ramă de telefon */
+.frame.mobile iframe{width:390px;height:1000px;transform:translateX(-50%) scale(.46);border-radius:24px;box-shadow:0 0 0 8px #15201d,0 18px 40px -18px rgba(0,0,0,.4);top:24px}
+.card-f{display:flex;gap:10px;padding:14px 18px}
+.card-f a{flex:1;text-align:center;font:600 .85rem/1 system-ui;text-decoration:none;padding:.75em 1em;border-radius:999px}
+.a-open{background:var(--ink);color:#fff}
+.a-open:hover{background:#000}
+@media (max-width:480px){.frame{height:380px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Template-urile leads-toolkit <small>6 demo-uri · 5 arhetipuri</small></h1>
+  <div class="toggle" role="group" aria-label="Mod de previzualizare">
+    <button id="btnD" aria-pressed="true">Desktop</button>
+    <button id="btnM" aria-pressed="false">Mobil</button>
+  </div>
+</header>
+<p class="hint">Previzualizări live, scalate — arată partea de sus a fiecărui template. Pentru pagina completă și funcțională (compozitor WhatsApp, stare deschis/închis, animații), apasă <b>Deschide template-ul</b>.</p>
+<div class="grid" id="grid"></div>
+<script>
+const DEMOS=[
+  ["_v2_cizmarie_marian.html","Reparații Încălțăminte Marian","atelier · cizmărie"],
+  ["_v2_detailing_paulescu.html","Detailing Auto Paulescu","studio · detailing"],
+  ["_v2_kineto_theramove.html","TheraMove Recuperare","cabinet · kineto"],
+  ["_v2_parbrize_montaj.html","Montaj Parbrize Ieftin","urgent · parbrize"],
+  ["_v2_avocatura_dinescu.html","Cabinet Avocat Dinescu & Asociații","birou · avocatură"],
+  ["_v2_consultanta_veritas.html","Veritas Consulting","birou · consultanță"],
+];
+const grid=document.getElementById('grid');
+for(const [file,name,arch] of DEMOS){
+  const el=document.createElement('div');
+  el.className='card';
+  el.innerHTML=`
+    <div class="card-h"><b>${name}</b><span class="arch">${arch}</span></div>
+    <div class="frame desktop"><iframe loading="lazy" src="${file}" title="${name}"></iframe></div>
+    <div class="card-f"><a class="a-open" href="${file}" target="_blank" rel="noopener">Deschide template-ul →</a></div>`;
+  grid.appendChild(el);
+}
+const btnD=document.getElementById('btnD'),btnM=document.getElementById('btnM');
+function setMode(m){
+  document.querySelectorAll('.frame').forEach(f=>{f.classList.toggle('desktop',m==='d');f.classList.toggle('mobile',m==='m');});
+  btnD.setAttribute('aria-pressed',m==='d');btnM.setAttribute('aria-pressed',m==='m');
+}
+btnD.onclick=()=>setMode('d');btnM.onclick=()=>setMode('m');
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# output de lucru — leads bruti, nerevizuiti
+leads_found.json
+pending_leads.json
+round*.json
+*.bak_*
